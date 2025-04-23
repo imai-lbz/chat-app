@@ -70,3 +70,8 @@ end
 gem "devise"
 
 gem 'pry-rails'
+
+# コマンドラインから画像に処理を加える
+gem 'mini_magick'
+# 画像サイズを調整する
+gem 'image_processing', '~> 1.2'
