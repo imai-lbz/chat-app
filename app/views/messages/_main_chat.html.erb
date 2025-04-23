@@ -10,27 +10,7 @@
 </div>
 
 <div class="chat-main">
-  <div class="message">
-    <div class="message-info">
-      <div class="user-name">Steve Jobs</div>
-      <div class="created-time">1976/04/01 00:00</div>
-    </div>
-    <div class="content">Apple創業日</div>
-  </div>
-  <div class="message">
-    <div class="message-info">
-      <div class="user-name">Steve Jobs</div>
-      <div class="created-time">1976/04/01 00:00</div>
-    </div>
-    <div class="content">Apple創業日</div>
-  </div>
-  <div class="message">
-    <div class="message-info">
-      <div class="user-name">Steve Jobs</div>
-      <div class="created-time">1976/04/01 00:00</div>
-    </div>
-    <div class="content">Apple創業日</div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], html: {class: "caht-footer"}, local: true do |f|%>
